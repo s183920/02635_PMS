@@ -1,3 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -std=99
+CFLAGS = -Wall -std=c99
 LDLIBS = -lm
+
+# tri_sylvester_solve.c
