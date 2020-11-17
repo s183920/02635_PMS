@@ -24,7 +24,7 @@ The function returns the output `info` from DGESV with the
 following exceptions: the return value is
 
    -9 if the input A is NULL and/or the input B is NULL
-   -10 if A is not a square matrix
+   -10 if A is not a square matrix 
    -11 if the dimensions of A and b are incompatible
    -12 in case of memory allocation errors.
 */
@@ -57,7 +57,7 @@ int call_dgesv(matrix_t * A, vector_t * b) {
 
   // call the function
   dgesv_(&n, &nrhs, A_flat, &lda, ipiv, b->v, &ldb, &info);
-
+ 
   // free memory
   free(ipiv); 
   free(A_flat);
